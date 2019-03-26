@@ -365,7 +365,7 @@
 
       - name: "DHIS2: Download DHIS2 {{dhis2_version}} war file to Tomcat webapps"
         get_url:
-          url: "https://s3-eu-west-1.amazonaws.com/releases.dhis2.org/{{ dhis2_version }}/dhis.war"
+          url: "https://releases.dhis2.org/{{ dhis2_version }}/dhis.war"
           dest: /var/lib/tomcat/webapps/ROOT.war
           owner: tomcat
           group: tomcat
